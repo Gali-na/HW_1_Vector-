@@ -1,7 +1,7 @@
 public class Vector3d {
-    int coordinateX;
-    int coordinateY;
-    int coordinateZ;
+  private int coordinateX;
+  private int coordinateY;
+  private int coordinateZ;
 
     public Vector3d(int coordinateX, int coordinateY, int coordinateZ) {
         this.coordinateX = coordinateX;

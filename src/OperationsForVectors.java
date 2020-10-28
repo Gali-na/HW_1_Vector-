@@ -1,6 +1,6 @@
 public class OperationsForVectors {
 
-    public static int  ScalarProduct (Vector3d vectorA, Vector3d vectorB)  {
+    public static int scalarProduct(Vector3d vectorA, Vector3d vectorB)  {
 
         return ( vectorA.getCoordinateX()* vectorB.getCoordinateX())
                 + ( vectorA.getCoordinateY()* vectorB.getCoordinateY())
@@ -8,7 +8,7 @@ public class OperationsForVectors {
 
     }
 
-    public static Vector3d  VectorProduct(Vector3d vectorA, Vector3d vectorB)  {
+    public static Vector3d vectorProduct(Vector3d vectorA, Vector3d vectorB)  {
 
         Vector3d vector3d= new Vector3d();
 
@@ -18,17 +18,17 @@ public class OperationsForVectors {
         vector3d.setCoordinateY((vectorA.getCoordinateZ()*vectorB.getCoordinateX()
                         -vectorA.getCoordinateX()*vectorB.getCoordinateZ()));
 
-        vector3d.setCoordinateX((vectorA.getCoordinateX()*vectorB.getCoordinateY()
+        vector3d.setCoordinateZ((vectorA.getCoordinateX()*vectorB.getCoordinateY()
                         -vectorA.getCoordinateY()*vectorB.getCoordinateX()));
         return  vector3d;
     }
 
-    public static Vector3d  SumOfVectors(Vector3d vectorA, Vector3d vectorB)  {
+    public static Vector3d sumOfVectors(Vector3d vectorA, Vector3d vectorB)  {
 
         Vector3d vector3d= new Vector3d();
         vector3d.setCoordinateX(vectorA.getCoordinateX()+ vectorB.getCoordinateX());
-        vector3d.setCoordinateX(vectorA.getCoordinateY()+ vectorB.getCoordinateY());
-        vector3d.setCoordinateX(vectorA.getCoordinateZ()+ vectorB.getCoordinateZ());
+        vector3d.setCoordinateY(vectorA.getCoordinateY()+ vectorB.getCoordinateY());
+        vector3d.setCoordinateZ(vectorA.getCoordinateZ()+ vectorB.getCoordinateZ());
         return vector3d;
     }
 }
